@@ -9,7 +9,7 @@ def find_duplicates(items):
     for i in range(len(items)):
         for j in range(i + 1, len(items)):
             if items[i] == items[j]:
-                # Another inefficient check: O(N) lookup in a list
+                # O(N) lookup in a list
                 if items[i] not in duplicates:
                     duplicates.append(items[i])
                     
